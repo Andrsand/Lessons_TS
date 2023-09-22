@@ -12,4 +12,3 @@ var contact = ['Alex', 9987623333];
 // Any
 var variable = 42;
 variable = 'ccc';
-//# sourceMappingURL=1types.js.map
