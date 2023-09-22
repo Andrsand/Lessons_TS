@@ -11,4 +11,8 @@ var words = ['Hello', 'TypeScript'];
 var contact = ['Alex', 9987623333];
 // Any
 var variable = 42;
-variable = 'ccc';
+variable = 'ddd';
+function sayMyName(name) {
+    console.log(name);
+}
+sayMyName('Andrey');

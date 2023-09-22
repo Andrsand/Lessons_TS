@@ -20,7 +20,12 @@ const contact: [string, number] = ['Alex', 9987623333];
 // Any
 let variable: any = 42;
 
+variable = 'ddd'
 
-variable = 'ccc';
+function sayMyName(name: string): void {
+    console.log(name)
+}
+
+sayMyName('jjj');
 
 
