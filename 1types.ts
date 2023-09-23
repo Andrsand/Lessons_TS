@@ -39,3 +39,11 @@ function infinite(): never { // нельзя запускать эту функ�
 
     }
 }
+
+// Type
+
+type Login = string;
+
+const login: Login = 'admin';
+//const login2: Login = 2;
+
