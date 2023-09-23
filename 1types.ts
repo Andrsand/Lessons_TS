@@ -28,4 +28,14 @@ function sayMyName(name: string): void {
 
 sayMyName('jjj');
 
+// Never
+function throwError(message: string): never {
+    
+            throw new Error(message)
+        }
+    
+function infinite(): never { // нельзя запускать эту функцию потому что все зависнет 
+    while (true) {
 
+    }
+}
