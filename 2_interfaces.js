@@ -26,3 +26,12 @@ var rect5 = {
         return this.size.width * this.size.height;
     }
 };
+var Clock = /** @class */ (function () {
+    function Clock() {
+        this.time = new Date();
+    }
+    Clock.prototype.setTime = function (date) {
+        this.time = date;
+    };
+    return Clock;
+}());

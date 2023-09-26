@@ -45,3 +45,18 @@ const rect5: RectWithArea = {
         return this.size.width * this.size.height;
     }
 };
+
+//========================== Взаимодействие интерфейсов с классами
+
+interface IClock {
+    time: Date
+    setTime(date: Date): void
+}
+
+class Clock implements IClock {
+    time = new Date();
+    
+    setTime(date: Date) {
+        this.time = date;
+    } 
+}
