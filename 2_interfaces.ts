@@ -25,3 +25,8 @@ const rect2: Rect = {
 };
 
 rect2.color = 'blue';
+
+const rect3 = {} as Rect; // Приведение объект
+const rect4 = <Rect>{}; // альтернативный способ приведения объекта
+
+
