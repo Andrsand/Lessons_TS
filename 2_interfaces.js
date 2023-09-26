@@ -16,3 +16,13 @@ var rect2 = {
 rect2.color = 'blue';
 var rect3 = {}; // Приведение объект
 var rect4 = {}; // альтернативный способ приведения объекта
+var rect5 = {
+    id: '8888',
+    size: {
+        width: 100,
+        height: 100
+    },
+    getArea: function () {
+        return this.size.width * this.size.height;
+    }
+};

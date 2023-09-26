@@ -29,4 +29,19 @@ rect2.color = 'blue';
 const rect3 = {} as Rect; // Приведение объект
 const rect4 = <Rect>{}; // альтернативный способ приведения объекта
 
+//=============== 
 
+interface RectWithArea extends Rect { // интерфейс наследуется от интерфейса Rect
+    getArea: () => number;            // функция, которая возвращает тип данных - number
+}
+
+const rect5: RectWithArea = {
+    id: '8888',
+    size: {
+        width: 100,
+        height: 100
+    },
+    getArea() {
+        return this.size.width * this.size.height;
+    }
+};
