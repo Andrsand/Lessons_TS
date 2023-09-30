@@ -60,3 +60,15 @@ class Clock implements IClock {
         this.time = date;
     } 
 }
+
+//============ Интерфейс для объекта с большим количеством динамических ключей
+interface Styles {
+    [key: string]: string //  [key: string] относится к  border, marginTop, borderRadius: а : string - к   : '1px solid black', '2px', '5px',
+}
+
+const css: Styles = {        
+    border: '1px solid black',
+    marginTop: '2px',
+    borderRadius: '5px',
+};
+
