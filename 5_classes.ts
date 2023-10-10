@@ -49,3 +49,22 @@ class Cat extends Animal {
 const cat = new Cat();
 cat.setVoice('Meow');
 console.log(cat.color);  // публичные свойства доступны 
+
+//===== абстрактные классы =======
+// От абстрактных классов можно наследовать, но сами они не во что не компилируются
+
+abstract class Component {
+    abstract render(): void;
+    abstract info(): string;
+}
+
+class AppComponent extends Component {
+    render(): void {
+        console.log('Component rendered')
+    }
+
+    info(): string {
+    return 'This is info';
+    }
+}
+
