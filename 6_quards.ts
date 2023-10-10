@@ -4,3 +4,27 @@ function strip(x: string | number) {
     }
     return x.trim()                // иначе x будет строкой
 }
+
+// instance of - для проверки объекта к классу
+
+class MyResponse {
+    header = 'response header';
+    result = 'response result';
+}
+
+class MyError {
+    header = 'error header';
+    message = 'error message';
+}
+
+function handle(res: MyResponse | MyError) {
+    if (res instanceof MyResponse) {  // если объект res содержит MyResponse - то вернем объект info с соответствующими классу полями
+        return {
+            info: res.header + res.result
+        }
+    } else {                       // иначе в поле info будут поля из класса MyError
+        return {
+            info: res.header + res.message
+        }
+    }
+}
