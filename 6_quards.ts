@@ -28,3 +28,15 @@ function handle(res: MyResponse | MyError) {
         }
     }
 }
+
+//===== несколько значений типа =================
+type AlertType = 'success' | 'warning' | 'danger'; // присваиваем типу несколько значений
+function setAlertType(type: AlertType) {
+    //................................................................
+}
+
+setAlertType('danger');
+setAlertType('warning');
+
+// setAlertType('default'); присвоение изначально не определенного в AlertType значения не прокатит
+
