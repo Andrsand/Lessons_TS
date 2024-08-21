@@ -1,4 +1,5 @@
 
+// присваиваем переменной тип boolean
 
 const isFetching: boolean = true;
 const isLoading: boolean = false;
@@ -51,4 +52,6 @@ type ID = string | number;
 const id1: ID = '123';
 const id2: ID = 123;
 
-type SomeType = string | null | undefined
+type SomeType = string | null | undefined;
+
+console.log(isLoading);
